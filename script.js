@@ -7,7 +7,7 @@ let newsdom = document.getElementById("news")
 // let xhr = new XMLHttpRequest();
 // xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`, true);
 
-fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`).then(response => response.json()).then(data =>{
+fetch(`http://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`).then(response => response.json()).then(data =>{
     let articles = data.articles;
     newshtml = "";
     let i = 0;
